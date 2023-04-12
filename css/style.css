@@ -118,7 +118,7 @@ padding: 0rem;
 .p-2{ padding: 2 rem } 
 .p-3{ padding: 3 rem } 
 .l-heading {
- font-size: 3rem;
+ font-size: 1.5rem;
 
 
 }
@@ -151,13 +151,14 @@ padding: 0rem;
 }
 #main-nav .container{
   display: grid;
-  grid-template-columns: 1fr 1fr 6fr;
+  grid-template-columns: 1fr 6fr 2fr;
   padding: 1rem;
   align-items: center;
 
 }
 #main-nav.logo{
   width: 180px;
+  grid-template-columns: 1fr 1fr 1fr;  
 }
 #main-nav ul{
   justify-self: end;
@@ -176,7 +177,7 @@ padding: 0rem;
   color: var(--dark-color);
 }
 #main-nav .social {
-  justify-self: center;
+  justify-self: right;
 }
 #main-nav .social i{
   color: #777;
@@ -191,6 +192,7 @@ padding: 0rem;
   position: relative;
 
 }
+
 #showcase:before{
   content: '';
   background: url('../img/sports.jpg') no-repeat  center center/cover;
@@ -208,12 +210,67 @@ padding: 0rem;
   align-items: center;
   height:50vh;
 }
+
+
 #showcase .showcase-content {
   z-index: 1;
+}
+.sport-button{
+  background-color: orange;
+  color: white;
+  border: none;
+  height: 36px;
+width: 74px;
+border-radius: 18px;
+font-weight: bold;
+font-size: 15px;
+
+}
+.ent-button{
+  background-color: rgb(214, 69, 214);
+  color: white;
+  border: none;
+  height: 36px;
+width: 130px;
+border-radius: 18px;
+font-weight: bold;
+font-size: 15px;
+}
+.tech-button{
+  background-color: aqua;
+  color: white;
+  border: none;
+  height: 36px;
+width: 130px;
+border-radius: 18px;
+font-weight: bold;
+font-size: 15px;
+}
+.more-button{
+ background-color:white;
+color: rgb(41, 118, 211);
+border-color:rgb(41, 118, 211);
+border-width:1px;
+height: 30px;
+width: 42px;
+border-radius: 2px;
+font-weight: bold;
+font-size: 15px;
+cursor: pointer;
+margin-left: 8px;
+box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+margin-right: 20px;
+margin-left: 200px;
+
+}
+.more-button:hover{
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+  background-color: red;
 }
 #showcase .showcase-content p{
   margin-bottom: 1rem;
 }
+
 
 /*Home Articles*/
 #home-articles .articles-container{
