@@ -118,7 +118,7 @@ padding: 0rem;
 .p-2{ padding: 2 rem } 
 .p-3{ padding: 3 rem } 
 .l-heading {
- font-size: 1.5rem;
+ font-size: rem;
 
 
 }
@@ -180,8 +180,8 @@ padding: 0rem;
   justify-self: right;
 }
 #main-nav .social i{
-  color: #777;
-  margin-right: .5rem;
+  color: blue;
+  margin-right: 1rem;
 }
 
 /* Showcase*/
@@ -333,4 +333,10 @@ padding: 0.5rem;
 #main-footer .footer-container input[type='submit']{
   width: 90%;
 
+}
+/*sport*/
+#sport-articles .articles-container{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-gap: 1rem;
 }
